@@ -1,13 +1,18 @@
 # -nanodegree-renameFiles
-Python and Node.JS implementation of 'rename files' from udacity full stack web dev nanodegree
+Python and Node.JS implementation of 'send_message' from udacity full stack web dev nanodegree
 
 ## Objective
-Remove a blacklist characters from all files names in a given directory path
+Send a SMS via Twilio middleware
+
+## Dependencies
+- Twilio library
+- .env file with TWILIO_AUTH, TWILIO_SID and TWILIO_NO info
 
 ## Python
-- just run the script from /py/rename_files.py
+- instal twilio from easy_install
+- just run the script from /py/send_message.py
 
 ## Node.js
-- no modules required
-- run node js/rename_files.js (addapting the folder path) or import into your app via require("./js/rename_files")
+- run npm install to install twilio and dotenv
+- require ("js/send_message") and use as a module passing the destionation number as parameter
 - exposes method init that accepts a folder path and an array of blacklist characters
